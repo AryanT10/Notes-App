@@ -1,0 +1,172 @@
+html
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.notes {
+    display: flex;
+	flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: #edf7f7;
+}
+
+.notes * {
+    font-family: sans-serif;
+    color: #564154;
+}
+
+.notes_side {
+    border-right: 3px solid #8b8484;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 25%;
+	height: 100vh;
+}
+.deleteButton {
+    margin-left: 5px;
+    border: #d7bdbd;
+    background-color: #d7bdbd;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    width: 8%;
+    margin-bottom: 5px;
+  }
+  
+  .deleteButton:hover{
+    background-color: #aaa;
+    color: #fff;
+  }  
+.notes_add {
+    background: #3AAFB9;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.notes_container{
+    cursor: pointer;
+        background-color: rgb(231, 214, 214);
+        border-radius: 10px;
+}
+
+.notes_note12 {
+    background: #97C8EB;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.notes_title,
+.notes_update {
+    padding: 10px;
+}
+
+.notes_title {
+    font-size: 1.2em;
+}
+
+.notes_body {
+    padding: 0 10px;
+}
+.deleteButton {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.notes_container:hover .deleteButton {
+    opacity: 3;
+}
+
+.notes_update {
+    color: #81737f;
+    font-style: italic;
+    text-align: right;
+}
+
+.notes_preview {
+    background-color:#d7bdbd;
+    padding: 2em 3em;
+    align-self: center;
+}
+
+.title
+{ 
+    font-family: 'Times New Roman', Times, serif;
+    border-style: double;
+    font-size: 2.3em;
+    width: 120%;
+    background-color: #edf7f7;
+    margin-top: 117px;
+    margin-left: 100px;
+}
+.body{
+    font-family: 'Times New Roman', Times, serif;
+    border-style: dashed;
+    height: 500px;
+    width:190%;
+    font-size:1.2em ;
+    background-color: #edf7f7;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.notes_title,
+.notes_body {
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+#submit-btn{
+    width: 49%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+#reset-btn{
+    width: 49%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+.notes_title {
+    background: #3AAFB9;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.75em 0;
+    width: 100%;
+    text-align: center;
+}
+
+.notes_title:hover {
+    background:  #093A3E;
+}
+.notes_body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+}
+@media screen and (max-width: 800px) {
+    .notes_add, .notes, .notes_body, .notes_container, .body, .title, .deleteButton, .notes_note12, .notes_preview, .notes_note12, .notes_title, .notes_side, .saveButton, .notes_update, .preview{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
